@@ -11,6 +11,17 @@ set guifont=Inconsolata\ Medium\ 12
 set number
 " Activar/Desactivar mostrar numeros de linea y anchura folding
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Pathogen                                             "
+" http://www.vim.org/scripts/script.php?script_id=2332 "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+" See: Pathogen notes, before filetype plugin indent on
+" if you want to load ftdetect files
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 " Habilita la deteccion de tipos de fichero
 filetype on
 " Habilita plugins especificos para tipos de fichero
@@ -107,3 +118,4 @@ highlight DiffDelete ctermbg=red ctermfg=white
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:pydiction_location = '~/.vim/ftplugin/python/dictionaries/complete-dict'
 let g:pydiction_menu_height = 20
+
