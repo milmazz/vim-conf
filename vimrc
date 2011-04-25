@@ -21,7 +21,7 @@ filetype plugin indent on
 " Deteccion de errores en el formato, sangria en Python
 autocmd FileType python set complete+=k~/.vim/syntax/python.vim isk+=.,(
 " Modo que facilita copy & paste desde otras ventanas a Vim
-set nopaste " Parece que \"set paste\" no es compatible con SuperTab
+set nopaste "FIXME: Parece que \"set paste\" no es compatible con SuperTab
 " Activar/Desactivar modo copy & paste
 set pastetoggle=<C-x>
 " Mostrar el numero de linea y columna de la posicion actual del cursor
@@ -43,6 +43,8 @@ set showmatch
 set ignorecase		" Do case insensitive matching
 set smartcase		" Do smart case matching
 set incsearch		" Incremental search
+
+" Correccion ortografica en castellano
 "set spell
 "setlocal spell spelllang=es
 
@@ -50,19 +52,18 @@ set incsearch		" Incremental search
 " Taglist plugin                                      "
 " http://www.vim.org/scripts/script.php?script_id=273 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Taglist variables
-" Display function name in status bar:
+" Mostrar el nombre de la funcion en la barra de estado
 let g:ctags_statusline=1
-" Automatically start script
+" Automaticamente iniciar script
 let generate_tags=1
-" Displays taglist results in a vertical window:
+" Mostrar los resultados en una ventana vertical
 let Tlist_Use_Horiz_Window=0
-" Shorter commands to toggle Taglist display
+" Comandos abreviados para interactuar con Taglist
 nnoremap TT :TlistToggle<CR>
 map <F4> :TlistToggle<CR>
 nnoremap <S-F4> :TlistUpdate
 nnoremap <C-F4> :TlistOpen
-" Various Taglist display config:
+" Opciones de visualizacion de los tags
 let Tlist_Use_Right_Window = 1
 let Tlist_Compat_Format = 1
 let Tlist_Exit_OnlyWindow = 1
@@ -77,3 +78,16 @@ let Tlist_File_Fold_Auto_Close = 1
 if has("gui_running")
 	highlight SpellBad term=underline gui=undercurl guisp=Orange
 endif
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" NERDTree                                             "
+" http://www.vim.org/scripts/script.php?script_id=1658 "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <silent> <F9> :NERDTreeToggle<CR>
+let g:NERDTreeWinPos = "left"
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" TaskList                                             "
+" http://www.vim.org/scripts/script.php?script_id=2607 "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <silent> <F7> :TaskList<CR>
