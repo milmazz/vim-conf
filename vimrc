@@ -11,6 +11,10 @@ set guifont=Inconsolata\ Medium\ 12
 set number
 " Activar/Desactivar mostrar numeros de linea y anchura folding
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
+" Habilita la deteccion de tipos de fichero
+filetype on
+" Habilita plugins especificos para tipos de fichero
+filetype plugin on
 " Manejo automatico de la sangria en Python
 " http://www.vim.org/scripts/script.php?script_id=974
 filetype plugin indent on
@@ -29,7 +33,6 @@ set background=dark
 " Resaltar resultados de busquedas
 set hlsearch
 
-filetype plugin on
 " Equivalencia del comando :grep en Vim
 set grepprg=grep\ -nH\ $*
 
