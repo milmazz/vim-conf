@@ -91,3 +91,12 @@ let g:NERDTreeWinPos = "left"
 " http://www.vim.org/scripts/script.php?script_id=2607 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap <silent> <F7> :TaskList<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""
+" SCMDiff                                 "
+" https://github.com/ghewgill/vim-scmdiff "
+"""""""""""""""""""""""""""""""""""""""""""
+highlight DiffAdd ctermbg=DarkBlue ctermfg=white cterm=NONE
+highlight DiffChange ctermbg=DarkBlue ctermfg=white cterm=NONE
+highlight DiffText ctermbg=DarkBlue ctermfg=white cterm=underline
+highlight DiffDelete ctermbg=red ctermfg=white
