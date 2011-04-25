@@ -68,3 +68,12 @@ let Tlist_Compat_Format = 1
 let Tlist_Exit_OnlyWindow = 1
 let Tlist_GainFocus_On_ToggleOpen = 1
 let Tlist_File_Fold_Auto_Close = 1
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Pyflakes                                             "
+" http://www.vim.org/scripts/script.php?script_id=2441 "
+" https://github.com/kevinw/pyflakes-vim               "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+if has("gui_running")
+	highlight SpellBad term=underline gui=undercurl guisp=Orange
+endif
