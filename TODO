@@ -5,3 +5,7 @@
  - VimPDB http://code.google.com/p/vimpdb/
 * Inclusion de herramientas de refactorizacion
  - ropevim
+* Revisar NERD Commenter
+- http://www.vim.org/scripts/script.php?script_id=1218
+* Revisar syntastic, posible reemplazo de pylint o pyflakes
+- http://www.vim.org/scripts/script.php?script_id=2736
