@@ -1,2 +1,7 @@
-* Inclusion del plugin pydiction
+* Inclusion de herramienta de autocompletacion
+ - pydiction
+ - pysmell https://github.com/orestis/pysmell
 * Inclusion de herramientas de depuracion
+ - VimPDB http://code.google.com/p/vimpdb/
+* Inclusion de herramientas de refactorizacion
+ - ropevim
