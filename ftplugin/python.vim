@@ -6,3 +6,4 @@ setlocal smarttab
 setlocal expandtab
 setlocal autoindent
 setlocal commentstring=\ #\ %s
+SyntasticEnable
