@@ -61,7 +61,7 @@ de Python.
 SuperTab
 --------
 
-URI: http://github.com/vim-scripts/SuperTab-continued
+URI: http://github.com/ervandew/supertab
 Uso: Presione la tecla de tabulacion <Tab> en modo insercion para posible
 completacion.
 Descripcion: 
