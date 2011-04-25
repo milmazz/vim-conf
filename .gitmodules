@@ -1,6 +1,3 @@
-[submodule "bundle/pyflakes"]
-	path = bundle/pyflakes
-	url = git://github.com/kevinw/pyflakes-vim.git
 [submodule "bundle/snipMate"]
 	path = bundle/snipMate
 	url = git://github.com/vim-scripts/snipMate.git
