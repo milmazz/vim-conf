@@ -17,13 +17,17 @@ filetype plugin indent on
 " Deteccion de errores en el formato, sangria en Python
 autocmd FileType python set complete+=k~/.vim/syntax/python.vim isk+=.,(
 " Modo que facilita copy & paste desde otras ventanas a Vim
-set paste
+set nopaste " Parece que \"set paste\" no es compatible con SuperTab
+" Activar/Desactivar modo copy & paste
+set pastetoggle=<C-x>
 " Mostrar el numero de linea y columna de la posicion actual del cursor
 set ruler
 " Mejora en la completacion en modo comando
 set wildmenu
 " Definicion del color para el fondo
 set background=dark
+" Resaltar resultados de busquedas
+set hlsearch
 
 filetype plugin on
 " Equivalencia del comando :grep en Vim
@@ -53,6 +57,8 @@ let Tlist_Use_Horiz_Window=0
 " Shorter commands to toggle Taglist display
 nnoremap TT :TlistToggle<CR>
 map <F4> :TlistToggle<CR>
+nnoremap <S-F4> :TlistUpdate
+nnoremap <C-F4> :TlistOpen
 " Various Taglist display config:
 let Tlist_Use_Right_Window = 1
 let Tlist_Compat_Format = 1
