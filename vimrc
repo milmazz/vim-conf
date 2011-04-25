@@ -82,15 +82,6 @@ let Tlist_GainFocus_On_ToggleOpen = 1
 let Tlist_File_Fold_Auto_Close = 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Pyflakes                                             "
-" http://www.vim.org/scripts/script.php?script_id=2441 "
-" https://github.com/kevinw/pyflakes-vim               "
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-if has("gui_running")
-	highlight SpellBad term=underline gui=undercurl guisp=Orange
-endif
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NERDTree                                             "
 " http://www.vim.org/scripts/script.php?script_id=1658 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -119,3 +110,12 @@ highlight DiffDelete ctermbg=red ctermfg=white
 let g:pydiction_location = '~/.vim/bundle/Pydiction/complete-dict'
 let g:pydiction_menu_height = 20
 
+"""""""""""""""""""""""""""""""""""""""""""
+" Syntastic                               "
+" http://github.com/scrooloose/syntastic/ "
+"""""""""""""""""""""""""""""""""""""""""""
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_enable_signs=1
+let g:syntastic_auto_loc_list=1
