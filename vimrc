@@ -100,3 +100,10 @@ highlight DiffAdd ctermbg=DarkBlue ctermfg=white cterm=NONE
 highlight DiffChange ctermbg=DarkBlue ctermfg=white cterm=NONE
 highlight DiffText ctermbg=DarkBlue ctermfg=white cterm=underline
 highlight DiffDelete ctermbg=red ctermfg=white
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Pydiction                                           "
+" http://www.vim.org/scripts/script.php?script_id=850 "
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:pydiction_location = '~/.vim/complete-dict'
+let g:pydiction_menu_height = 20
