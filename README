@@ -1,0 +1,6 @@
+Instrucciones de instalacion
+============================
+
+$ git clone https://milmazz@github.com/milmazz/vim-conf.git
+$ ln -s vim-conf/vim ~/.vim
+$ ln -s vim-conf/vimrc ~/.vimrc
