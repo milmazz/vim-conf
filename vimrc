@@ -19,7 +19,7 @@ filetype plugin on
 " http://www.vim.org/scripts/script.php?script_id=974
 filetype plugin indent on
 " Deteccion de errores en el formato, sangria en Python
-autocmd FileType python set complete+=k~/.vim/syntax/python.vim isk+=.,(
+autocmd FileType python set complete+=k~/.vim/syntax/python3.0.vim isk+=.,(
 " Modo que facilita copy & paste desde otras ventanas a Vim
 set nopaste "FIXME: Parece que \"set paste\" no es compatible con SuperTab
 " Activar/Desactivar modo copy & paste
