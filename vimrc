@@ -30,7 +30,7 @@ filetype plugin on
 " http://www.vim.org/scripts/script.php?script_id=974
 filetype plugin indent on
 " Deteccion de errores en el formato, sangria en Python
-autocmd FileType python set complete+=k~/.vim/syntax/python3.0.vim isk+=.,(
+autocmd FileType python set complete+=k~/.vim/bundle/python_highlight/syntax/python.vim isk+=.,(
 " Modo que facilita copy & paste desde otras ventanas a Vim
 set nopaste "FIXME: Parece que \"set paste\" no es compatible con SuperTab
 " Activar/Desactivar modo copy & paste
@@ -116,6 +116,6 @@ highlight DiffDelete ctermbg=red ctermfg=white
 " Pydiction                                           "
 " http://www.vim.org/scripts/script.php?script_id=850 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:pydiction_location = '~/.vim/ftplugin/python/dictionaries/complete-dict'
+let g:pydiction_location = '~/.vim/bundle/Pydiction/complete-dict'
 let g:pydiction_menu_height = 20
 
