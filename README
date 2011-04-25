@@ -21,7 +21,7 @@ Descripcion:
 snipMate
 --------
 
-URI: http://www.vim.org/scripts/script.php?script_id=2540 
+URI: http://github.com/vim-scripts/snipMate 
      http://vimeo.com/3535418
 Uso:
 Descripción:
@@ -29,7 +29,7 @@ Descripción:
 NERD_Tree
 ---------
 
-URI: http://www.vim.org/scripts/script.php?script_id=1658
+URI: http://github.com/vim-scripts/The-NERD-tree
 Uso: Presione tecla F9 para activar el navegador del proyecto en el panel
 izquierdo
 Descripción:
@@ -37,22 +37,22 @@ Descripción:
 Tasklist
 --------
 
-URI: http://www.vim.org/scripts/script.php?script_id=2607
+URI: http://github.com/vim-scripts/TaskList.vim
 Uso: Presione la tecla F7 para activar lista de tareas en el panel superior
 Descripcion:
 
 Taglist
 -------
 
-URI: http://www.vim.org/scripts/script.php?script_id=273
-Uso: Presione tecla F4 para activar/desactivar el explorador de codigo en el
-panel derecho
+URI: http://github.com/vim-scripts/taglist.vim
+Uso: Presione tecla F4 o TT para activar/desactivar el explorador de codigo en
+el panel derecho
 Descripcion: 
 
 Pydoc
 -----
 
-URI: http://www.vim.org/scripts/script.php?script_id=910
+URI: http://github.com/vim-scripts/pydoc.vim
 Uso: Mientras se ubique sobre una sentencia presione \pW para ejecutar el
 comando pydoc sobre esa sentencia. De manera alternativa puede usar :Pydoc
 algun.modulo.python para ver la documentacion asociada a ese modulo particular
@@ -61,7 +61,7 @@ de Python.
 SuperTab
 --------
 
-URI: http://www.vim.org/scripts/script.php?script_id=182
+URI: http://github.com/vim-scripts/SuperTab-continued
 Uso: Presione la tecla de tabulacion <Tab> en modo insercion para posible
 completacion.
 Descripcion: 
@@ -69,21 +69,22 @@ Descripcion:
 Pydiction
 ---------
 
-URI: http://www.vim.org/scripts/script.php?script_id=850
+URI: http://github.com/vim-scripts/Pydiction
 Uso: Presione las teclas Control+n o Control+p en modo insercion para posible
 completacion basada en diccionario.
 
 SCMDiff
 -------
 
-URI: https://github.com/ghewgill/vim-scmdiff
+URI: https://github.com/ghewgill/vim-scmdiff <- new ->
+https://github.com/vim-scripts/SCMDiff
 Uso: Activar/desactivar el modo diff con la combinación \d
 Descripción: Soporte para Git, Mercurial, SVN, CVS, etc.
 
 Python Functions
 ----------------
 
-URI: http://www.vim.org/scripts/script.php?script_id=30
+URI: http://github.com/vim-scripts/python.vim
 Uso:
    ]t      -- Jump to beginning of block
    ]e      -- Jump to end of block
@@ -100,7 +101,7 @@ Uso:
 Efficient python folding
 ------------------------
 
-URI: http://www.vim.org/scripts/script.php?script_id=1494
+URI: http://github.com/vim-scripts/Efficient-python-folding
 Uso: 
    Toggle all folds on/off with the key F 
    Toggle the fold under the cursor on/off with the key f
@@ -109,18 +110,12 @@ Descripción:
 Indentación
 -----------
 
-URI: http://www.vim.org/scripts/script.php?script_id=974
-
-TagList
--------
-
-URI: http://www.vim.org/scripts/script.php?script_id=273
-Uso: Manejo de tags, lo activas/desactivas con TT o F4
+URI: http://github.com/vim-scripts/indentpython.vim
 
 Python
 ------
 
-URI: http://www.vim.org/scripts/script.php?script_id=790
+URI: http://github.com/vim-scripts/python.vim--Vasiliev
 
 Esquemas de colores
 +++++++++++++++++++
