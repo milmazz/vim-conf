@@ -37,3 +37,12 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = git://github.com/scrooloose/syntastic.git
+[submodule "bundle/vim-colors-solarized"]
+	path = bundle/vim-colors-solarized
+	url = git://github.com/altercation/vim-colors-solarized.git
+[submodule "bundle/nginx"]
+	path = bundle/nginx
+	url = git://github.com/vim-scripts/nginx.vim.git
+[submodule "bundle/latex-suite"]
+	path = bundle/latex-suite
+	url = git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex
