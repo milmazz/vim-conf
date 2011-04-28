@@ -1,10 +1,14 @@
+" Compatibilidad con Vi
+set nocompatible
 " Codificacion
 set encoding=utf8
 " Resaltado de la sintaxis
 syntax on
+" Definicion del color para el fondo
+set background=dark
 " Esquema de colores
 " http://code.google.com/p/vimcolorschemetest/
-colorscheme wombat
+colorscheme wombat "solarized
 " Fuente preferida
 set guifont=Inconsolata\ Medium\ 12
 " Muestra los numeros de linea
@@ -39,8 +43,6 @@ set pastetoggle=<C-x>
 set ruler
 " Mejora en la completacion en modo comando
 set wildmenu
-" Definicion del color para el fondo
-set background=dark
 " Resaltar resultados de busquedas
 set hlsearch
 
@@ -119,3 +121,9 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 let g:syntastic_enable_signs=1
 let g:syntastic_auto_loc_list=1
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" nginx syntax                                         "
+" http://www.vim.org/scripts/script.php?script_id=1886 "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+au BufRead,BufNewFile /etc/nginx/* set ft=nginx
