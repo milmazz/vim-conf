@@ -1,16 +1,31 @@
+" Compatibilidad con Vi
+set nocompatible
 " Codificacion
 set encoding=utf8
 " Resaltado de la sintaxis
 syntax on
+" Definicion del color para el fondo
+set background=dark
 " Esquema de colores
 " http://code.google.com/p/vimcolorschemetest/
-colorscheme wombat
+colorscheme wombat "solarized
 " Fuente preferida
 set guifont=Inconsolata\ Medium\ 12
 " Muestra los numeros de linea
 set number
 " Activar/Desactivar mostrar numeros de linea y anchura folding
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Pathogen                                             "
+" http://www.vim.org/scripts/script.php?script_id=2332 "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+" See: Pathogen notes, before filetype plugin indent on
+" if you want to load ftdetect files
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 " Habilita la deteccion de tipos de fichero
 filetype on
 " Habilita plugins especificos para tipos de fichero
@@ -19,7 +34,7 @@ filetype plugin on
 " http://www.vim.org/scripts/script.php?script_id=974
 filetype plugin indent on
 " Deteccion de errores en el formato, sangria en Python
-autocmd FileType python set complete+=k~/.vim/syntax/python3.0.vim isk+=.,(
+autocmd FileType python set complete+=k~/.vim/bundle/python_highlight/syntax/python.vim isk+=.,(
 " Modo que facilita copy & paste desde otras ventanas a Vim
 set nopaste "FIXME: Parece que \"set paste\" no es compatible con SuperTab
 " Activar/Desactivar modo copy & paste
@@ -28,8 +43,6 @@ set pastetoggle=<C-x>
 set ruler
 " Mejora en la completacion en modo comando
 set wildmenu
-" Definicion del color para el fondo
-set background=dark
 " Resaltar resultados de busquedas
 set hlsearch
 
@@ -71,15 +84,6 @@ let Tlist_GainFocus_On_ToggleOpen = 1
 let Tlist_File_Fold_Auto_Close = 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Pyflakes                                             "
-" http://www.vim.org/scripts/script.php?script_id=2441 "
-" https://github.com/kevinw/pyflakes-vim               "
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-if has("gui_running")
-	highlight SpellBad term=underline gui=undercurl guisp=Orange
-endif
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " NERDTree                                             "
 " http://www.vim.org/scripts/script.php?script_id=1658 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -105,5 +109,21 @@ highlight DiffDelete ctermbg=red ctermfg=white
 " Pydiction                                           "
 " http://www.vim.org/scripts/script.php?script_id=850 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:pydiction_location = '~/.vim/ftplugin/python/dictionaries/complete-dict'
+let g:pydiction_location = '~/.vim/bundle/Pydiction/complete-dict'
 let g:pydiction_menu_height = 20
+
+"""""""""""""""""""""""""""""""""""""""""""
+" Syntastic                               "
+" http://github.com/scrooloose/syntastic/ "
+"""""""""""""""""""""""""""""""""""""""""""
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_enable_signs=1
+let g:syntastic_auto_loc_list=1
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" nginx syntax                                         "
+" http://www.vim.org/scripts/script.php?script_id=1886 "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+au BufRead,BufNewFile /etc/nginx/* set ft=nginx

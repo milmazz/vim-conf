@@ -1,3 +1,48 @@
-[submodule "vim/ftplugin/python/pyflakes"]
-	path = vim/ftplugin/python/pyflakes
-	url = git://github.com/kevinw/pyflakes.git
+[submodule "bundle/snipMate"]
+	path = bundle/snipMate
+	url = git://github.com/vim-scripts/snipMate.git
+[submodule "bundle/NERDTree"]
+	path = bundle/NERDTree
+	url = git://github.com/vim-scripts/The-NERD-tree.git
+[submodule "bundle/TaskList"]
+	path = bundle/TaskList
+	url = git://github.com/vim-scripts/TaskList.vim.git
+[submodule "bundle/taglist"]
+	path = bundle/taglist
+	url = git://github.com/vim-scripts/taglist.vim.git
+[submodule "bundle/pydoc"]
+	path = bundle/pydoc
+	url = git://github.com/vim-scripts/pydoc.vim.git
+[submodule "bundle/SuperTab"]
+	path = bundle/SuperTab
+	url = git://github.com/ervandew/supertab.git
+[submodule "bundle/SCMDiff"]
+	path = bundle/SCMDiff
+	url = git://github.com/ghewgill/vim-scmdiff.git
+[submodule "bundle/python_fn"]
+	path = bundle/python_fn
+	url = git://github.com/vim-scripts/python.vim.git
+[submodule "bundle/python_folding"]
+	path = bundle/python_folding
+	url = git://github.com/vim-scripts/Efficient-python-folding.git
+[submodule "bundle/python_indent"]
+	path = bundle/python_indent
+	url = git://github.com/vim-scripts/indentpython.vim.git
+[submodule "bundle/python_highlight"]
+	path = bundle/python_highlight
+	url = git://github.com/vim-scripts/python.vim--Vasiliev.git
+[submodule "bundle/Pydiction"]
+	path = bundle/Pydiction
+	url = git://github.com/milmazz/Pydiction.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = git://github.com/scrooloose/syntastic.git
+[submodule "bundle/vim-colors-solarized"]
+	path = bundle/vim-colors-solarized
+	url = git://github.com/altercation/vim-colors-solarized.git
+[submodule "bundle/nginx"]
+	path = bundle/nginx
+	url = git://github.com/vim-scripts/nginx.vim.git
+[submodule "bundle/latex-suite"]
+	path = bundle/latex-suite
+	url = git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex
